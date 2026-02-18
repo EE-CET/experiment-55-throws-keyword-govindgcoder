@@ -1,17 +1,17 @@
-import java.util.Scanner;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class ThrowsDemo {
-    
+
     // Define static method check(int n) that throws IOException
     // If n < 0, throw new IOException()
     // Else, print n
-    public static void check(int n) throws IOException{
-        if(n<0) throw new IOException();
+    public static void check(int n) throws IOException {
+        if (n < 0) throw new IOException();
         else System.out.print(n);
     }
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         // Read n
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -22,5 +22,3 @@ public class ThrowsDemo {
         }
     }
 }
-
-// comment to retry
